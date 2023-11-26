@@ -1,64 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-  	<title>Login-VSB</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylelogin.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="avatar-container">
+            <!-- Adicione o caminho da sua imagem no src -->
+            <img src="img/icone5.png" alt="Avatar" class="avatar">
+        </div>
+        <h2>Login</h2>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
 
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	
-	<link rel="stylesheet" href="css/style.css">
+            <label for="remember">
+                <input type="checkbox" id="remember" name="remember"> Lembrar senha
+            </label>
 
-	</head>
-	<body>
-	<section class="ftco-section">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-6 text-center mb-5">
-					<h2 class="heading-section">VSB - Virtual Smart Book</h2>
-				</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-md-6 col-lg-5">
-					<div class="login-wrap p-4 p-md-5">
-		      	<div class="icon d-flex align-items-center justify-content-center">
-		      		<span class="fa fa-user-o"></span>
-		      	</div>
-		      	<h3 class="text-center mb-4">Já tem uma conta?</h3>
-						<form action="#" class="login-form">
-		      		<div class="form-group">
-		      			<input type="text" class="form-control rounded-left" placeholder="Username" required>
-		      		</div>
-	            <div class="form-group d-flex">
-	              <input type="password" class="form-control rounded-left" placeholder="Password" required>
-	            </div>
-	            <div class="form-group d-md-flex">
-	            	<div class="w-50">
-	            		<label class="checkbox-wrap checkbox-primary">Relembrar-me
-									  <input type="checkbox" checked>
-									  <span class="checkmark"></span>
-									</label>
-								</div>
-								<div class="w-50 text-md-right">
-									<a href="#">Esqueceu sua senha?</a>
-								</div>
-	            </div>
-	            <div class="form-group">
-	            	<button type="submit" class="btn btn-primary rounded submit p-3 px-5">Entrar</button>
-	            </div>
-	          </form>
-	        </div>
-				</div>
-			</div>
-		</div>
-	</section>
+            <button type="button" onclick="login()">Login</button>
+        </form>
+        <p>Não tem uma conta? <a href="#">Crie uma agora</a></p>
+    </div>
 
-	<script src="js/jquery.min.js"></script>
-  <script src="js/popper.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
-
-	</body>
+    <script src="java/scriptlogin.js"></script>
+</body>
 </html>
