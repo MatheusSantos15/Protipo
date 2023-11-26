@@ -1,4 +1,5 @@
 function login() {
-    // Aqui você pode adicionar a lógica de autenticação, por exemplo, enviando uma solicitação para um servidor.
     alert("Login feito com sucesso");
+    window.location.href = "main.html";
+    
 }

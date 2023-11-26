@@ -1,5 +1,6 @@
 function signup() {
     alert("Cadastro realizado com sucesso");
+    window.location.href = "main.html";
 }
 
 function toggleDarkMode() {
