@@ -14,8 +14,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    max-width: 400px; /* Largura máxima aumentada para 400px */
-    width: 100%; /* Garante que a largura seja responsiva */
+    max-width: 400px; 
 }
 
 .avatar-container {
@@ -23,8 +22,7 @@ body {
 }
 
 .avatar {
-    width: 80px; /* Ajuste conforme necessário */
-    height: 80px; /* Ajuste conforme necessário */
+    width: 80px; 
     border-radius: 50%;
 }
 
